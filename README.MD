@@ -1,6 +1,6 @@
 # Introduction
 
-This is a startup template for express app configure with docker. This is fully functional app configured for debugging.
+This is pdf-genertor tool for node. Hummusjs is used as 3rd party to generate the reports. Here are some of the configuration that can be changed if you want to run this app in your envrionment.
 
 ## Configurations
 
