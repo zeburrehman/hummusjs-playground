@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+    pdf-api:
+        restart: always
+        build:
+            context: .
+            dockerfile: dockerfile
+        ports: 
+            - '3000:3000'
+            - '9229:9229'
+        env_file: 
+            - .env
+        volumes: 
+            - /home/app/hummusjs-playground/node_modules
+            - .:/home/app/hummusjs-playground/
+        networks: 
+            - playground
+networks: 
+    playground:
